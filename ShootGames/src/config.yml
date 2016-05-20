@@ -1,0 +1,59 @@
+General:
+ FullMagazineStart: false
+ DisableInNonPvpAreas: true
+ BlockDamage: false
+ AutoReload: true
+ CreativeUnlimitedAmmo: false
+ HeadshotEffect: true
+ WorldLimit:
+ 
+  # If this is set to true, the weapons can only be used in the worlds entered in the Worlds list
+  Enabled: false
+  
+  # List of worlds, where weapons are enabled
+  # Only will be active if "Enabled" is set to true
+  Worlds:
+   - world
+   - world_nether
+   - world_the_end
+   
+MessageOptions:
+
+ # If this is set to true, the player will receive all weapon related messages
+ # Does not affect the Headshot and Death message
+ Enabled: false
+ 
+ # If this is set to true, the Headshot message will be sended
+ HeadshotMessage: true
+ 
+ # If this is true, the custom death message will show if the player is killed by a weapon from this plugin
+ CustomDeathMessage: true
+ 
+ # If this is true, the Disabled message will show if you try to use a weapon in a non pvp area
+ # Only active when DisableInNonPvpAreas is set to true
+ DisabledMessage: true
+ 
+# List of messages
+# These can be changed!
+Messages:
+ NoMagazine: '&4&lYou dont have any bullets!'
+ WeaponReloaded: '&a&lThe %weapon% has been reloaded!'
+ HeadshotShooter: '&a&lYouve just shot %player% into the head!'
+ HeadshotVictim: '&4&lYour head got pierced by %player%!'
+ Death: '&8&l%killer% &r&a[%weapon%] &7&l%player%'
+ Disabled: '&4&lYou are not allowed to use weapons here!'
+ 
+# Knife settings
+Knife:
+ 
+ # If this is true, players will be able to use knifes
+ Enabled: true
+ 
+ # Id of the item that is used as a knife
+ Item: 352,1
+ 
+ # Normal damage of the knife
+ Damage: 5
+ 
+ # Damage of the knife when hit in the victim's back 
+ BackstabDamage: 20
